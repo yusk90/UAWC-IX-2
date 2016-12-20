@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dev challenge</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+
+        <form id="form-generator" class="form-generator form-horizontal"
+              action="">
+            <div class="form-group">
+                <label for="label-text"
+                       class="col-sm-3 control-label">Введіть назву поля
+                </label>
+                <div class="col-sm-9">
+                    <input id="label-text" class="form-control" type="text"
+                           placeholder="Наприклад: Ім’я">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="element-type" class="col-sm-3 control-label">Виберіть елемент</label>
+                <div class="col-sm-9">
+                    <select id="element-type" class="form-control">
+                        <option value="input-text">Текстове поле</option>
+                        <option value="textarea">Текстове поле (багатострокове)</option>
+                        <option value="input-email">Email</option>
+                        <option value="input-tel">Телефон</option>
+                        <option value="input-date">Дата</option>
+                        <option value="input-number">Числове поле</option>
+                        <option value="input-file">Завантаження файла</option>
+                        <option value="select">Список</option>
+                        <option value="input-checkbox">Прапорці</option>
+                        <option value="input-radio">Радіокнопки</option>
+                        <option value="button-button">Кнопки управління</option>
+                    </select>
+                    <div class="form-generator__additional-fieds">
+                        <div class="form-generator__select-options">
+                            <button class="btn btn-primary form-generator__add-element" type="button" title="Додати пункт"><span class="glyphicon glyphicon-plus"></span></button>
+                            <button class="btn btn-danger form-generator__remove-element" type="button" title="Видалити пункт"><span class="glyphicon glyphicon-remove"></span></button>
+                            <input class="form-control form-generator__select-option" type="text" placeholder="Введіть назву пункту">
+                        </div>
+                        <div class="form-generator__checkboxes">
+                            <button class="btn btn-primary form-generator__add-element" type="button" title="Додати прапорець"><span
+                                    class="glyphicon glyphicon-plus"></span></button>
+                            <button class="btn btn-danger form-generator__remove-element" type="button" title="Видалити прапорець"><span class="glyphicon glyphicon-remove"></span></button>
+                            <input class="form-control form-generator__checkbox"
+                                   type="text"
+                                   placeholder="Введіть назву прапорця">
+                        </div>
+                        <div class="form-generator__radiobuttons">
+                            <button class="btn btn-primary form-generator__add-element" type="button" title="Додати радіокнопку"><span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <button class="btn btn-danger form-generator__remove-element" type="button" title="Видалити радіокнопку"><span class="glyphicon glyphicon-remove"></span></button>
+                            <input class="form-control form-generator__radiobutton"
+                                   type="text"
+                                   placeholder="Введіть назву радіокнопки">
+                        </div>
+                        <div class="form-generator__control-buttons">
+                            <input class="form-control form-generator__control form-generator__back-button" type="text" placeholder="Введіть назву кнопки назад">
+                            <input class="form-control form-generator__control form-generator__forward-button" type="text" placeholder="Введіть назву кнопки вперед або відправити">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="input-placeholder"
+                       class="col-sm-3 control-label">Placeholder
+                </label>
+                <div class="col-sm-9">
+                    <input id="input-placeholder" class="form-control"
+                           type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <button id="add-field" class="btn btn-primary"
+                            type="button">Додати поле
+                    </button>
+                    <button id="add-step" class="btn btn-primary"
+                            type="button">Додати крок</button>
+                    <button id="generate-html" class="btn btn-primary" type="button">Сгенерувати HTML</button>
+                </div>
+            </div>
+            <div class="edit-buttons">
+                <button class="btn btn-sm btn-primary edit-buttons__up"
+                        type="button"><span class="glyphicon glyphicon-chevron-up"></span>
+                </button>
+                <button class="btn btn-sm btn-primary edit-buttons__down"
+                        type="button"><span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+                <button class="btn btn-sm btn-danger edit-buttons__delete"
+                        type="button"><span class="glyphicon glyphicon-remove"></span>
+                </button>
+            </div>
+        </form>
+
+        <div class="well">
+            <form id="form" class="form-horizontal form" action=""></form>
+        </div>
+
+        <pre></pre>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/generator-init.js"></script>
+</body>
+</html>

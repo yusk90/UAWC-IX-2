@@ -1,0 +1,72 @@
+.form-generator {
+    margin: 30px 0 0;
+
+    &__select-options,
+    &__checkboxes,
+    &__radiobuttons,
+    &__control-buttons {
+        position: relative;
+        display: none;
+        padding: 15px 0 25px;
+    }
+
+    &__select-option,
+    &__checkbox,
+    &__radiobutton,
+    &__control {
+        margin-bottom: 15px;
+    }
+
+    &__add-element,
+    &__remove-element {
+        min-width: 35px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__add-element {
+        left: 0;
+    }
+
+    &__remove-element {
+        left: 45px;
+    }
+}
+
+.edit-buttons {
+    display: none;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form {
+
+    margin: 20px 0;
+
+    &__step {
+        margin: 0 0 20px;
+        padding: 20px 20px 5px;
+        border: 1px solid #eaeaea;
+        border-radius: 5px;
+    }
+
+    &__popup {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    &__popup-message {
+        margin: 0;
+        padding: 30px 15px;
+    }
+
+    &__popup-close {
+        position: absolute;
+        right: 8px;
+        top: 4px;
+    }
+}

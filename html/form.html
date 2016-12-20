@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dev challenge</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form-horizontal form" action="">
+            <div class="form__step form__step-1">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-0">Ім’я</label>
+                    <div class="col-sm-9">
+                        <input name="name" id="id-0" type="text" placeholder="" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-1">Прізвище</label>
+                    <div class="col-sm-9">
+                        <input name="last-name" id="id-1" type="text" placeholder="" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-2">Напрям</label>
+                    <div class="col-sm-9">
+                        <select name="discipline" id="id-2"
+                                class="form-control conditional-select">
+                            <option value="nomination-1">Web Challenge</option>
+                            <option value="nomination-2">Mobile Challenge</option>
+                            <option value="nomination-3">Game Challenge</option>
+                            <option value="nomination-4">IoT Challenge</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-3">Номінація</label>
+                    <div class="col-sm-9">
+                        <select name="nomination-1" id="id-3" class="form-control">
+                            <option>Front-end developer (HTML/CSS)</option>
+                            <option>Front-end developer (JavaScript)</option>
+                            <option>Back-end developer</option>
+                            <option>Web Designer</option>
+                            <option>QA</option>
+                            <option>Team</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-4">Номінація</label>
+                    <div class="col-sm-9">
+                        <select name="nomination-2" id="id-4"
+                                class="form-control">
+                            <option>iOS developer</option>
+                            <option>Android developer</option>
+                            <option>Mobile Designer</option>
+                            <option>QA</option>
+                            <option>Mobile Team</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-5">Номінація</label>
+                    <div class="col-sm-9">
+                        <select name="nomination-3" id="id-5"
+                                class="form-control">
+                            <option>2D Character Designer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-6">Номінація</label>
+                    <div class="col-sm-9">
+                        <select name="nomination-4" id="id-6"
+                                class="form-control">
+                            <option>IOT</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-7">Категорія</label>
+                    <div class="col-sm-9">
+                        <select name="category" id="id-7"
+                                class="form-control">
+                            <option>Junior</option>
+                            <option>Middle/Senior</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <button id="id-8" type="button" class="btn btn-primary form__control form__control-next pull-right">Вперед</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form__step form__step-2">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-9">Де Ви дізналися про Dev Challenge</label>
+                    <div class="col-sm-9">
+                        <select name="where-find-out" id="id-9"
+                                class="form-control conditional-select">
+                            <option>dou.ua</option>
+                            <option>Вебінар</option>
+                            <option>Хакатон</option>
+                            <option value="where-find-out-another">інше</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <input name="where-find-out-another" id="id-10" type="text" placeholder="" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-10">Я к би Ви оцінили організацію чемпіонату</label>
+                    <div class="col-sm-9">
+                        <label class="radio-inline">
+                            <input id="id-11" type="radio" name="rating"
+                                   value="1"
+                                   checked="checked">1
+                        </label>
+                        <label class="radio-inline">
+                            <input id="id-12" type="radio" name="rating"
+                                   value="2">2
+                        </label>
+                        <label class="radio-inline">
+                            <input id="id-13" type="radio" name="rating"
+                                   value="3">3
+                        </label>
+                        <label class="radio-inline">
+                            <input id="id-14" type="radio" name="rating"
+                                   value="4">4
+                        </label>
+                        <label class="radio-inline">
+                            <input id="id-15" type="radio" name="rating"
+                                   value="5">5
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-16">Ваші враження від чемпіонату</label>
+                    <div class="col-sm-9">
+                        <textarea name="impression" id="id-16" placeholder=""
+                                  class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="id-17">Ваші побажання до наступного чемпіонату</label>
+                    <div class="col-sm-9">
+                        <textarea name="requests" id="id-17" placeholder=""
+                                  class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <button id="id-18" type="button"
+                                class="btn btn-primary form__control form__control-prev pull-left">Назад</button>
+                        <button id="id-19" type="button"
+                                class="btn btn-primary form__control form__control-next pull-right">Відправити</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form__popup modal text-center text-uppercase">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <h3 class="form__popup-message"></h3>
+                        <button type="button" class="close form__popup-close"
+                                ><span>×</span></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/form-init.js"></script>
+</body>
+</html>
